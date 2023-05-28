@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{3E04B239-8C72-4BAE-A51A-005260580E21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{3E04B239-8C72-4BAE-A51A-005260580E21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{F4C98248-C31D-4A05-ABDB-571E891D43DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{F4C98248-C31D-4A05-ABDB-571E891D43DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{2F213E99-ACF3-43E7-9047-7772126B6A01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{2F213E99-ACF3-43E7-9047-7772126B6A01}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{64176A02-5DB0-4D67-BB48-069F9953AB3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{9287776F-C90B-46B3-9B81-7248050C8DD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{9287776F-C90B-46B3-9B81-7248050C8DD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Abstractions", "Shared.Abstractions\Shared.Abstractions.csproj", "{EB993062-28C2-4FB8-AFEF-C3350B7DFE1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Abstractions", "Shared.Abstractions\Shared.Abstractions.csproj", "{EB993062-28C2-4FB8-AFEF-C3350B7DFE1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Api", "Web.Api\Web.Api.csproj", "{3B4CEB3E-FDB4-4A41-BEF9-0B09A97FEB49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.Api", "Web.Api\Web.Api.csproj", "{3B4CEB3E-FDB4-4A41-BEF9-0B09A97FEB49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit.Tests", "Unit.Tests\Unit.Tests.csproj", "{C5A48368-75EA-4A2D-A0CB-AE68E535EC7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{3B4CEB3E-FDB4-4A41-BEF9-0B09A97FEB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B4CEB3E-FDB4-4A41-BEF9-0B09A97FEB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B4CEB3E-FDB4-4A41-BEF9-0B09A97FEB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A48368-75EA-4A2D-A0CB-AE68E535EC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A48368-75EA-4A2D-A0CB-AE68E535EC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A48368-75EA-4A2D-A0CB-AE68E535EC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A48368-75EA-4A2D-A0CB-AE68E535EC7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

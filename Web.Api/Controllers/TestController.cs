@@ -4,7 +4,7 @@ namespace Web.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class TestController : ControllerBase
+    public class TestController : BaseController
     {
         private readonly ILogger<TestController> _logger;
 

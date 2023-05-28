@@ -34,13 +34,10 @@ namespace Application.Commands.Handlers
         {
             var (id, name, days, gender, DestinationWriteModel) = command;
 
-
             if (await _readService.ExistsByNameAsync(name))
             {
                 throw new TravelerCheckListAlreadyExistsException(name);
             }
-
-
             var destination = new Destination(DestinationWriteModel.City, DestinationWriteModel.Country);
             var weather = await _weatherService.GetWeatherAsync(destination);
 

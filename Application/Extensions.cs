@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Factories;
+using Domain.Policies;
+
+using Microsoft.Extensions.DependencyInjection;
+
+using Shared.Commands;
 
 namespace Application
 {
-    internal class Extensions
+    public static class Extensions
     {
+        public static IServiceCollection AddApplication(this IServiceCollection services)
+        {
+            services.AddCommands();
+            services.AddSingleton<ITravelerCheckListFactory, TravelerCheckListFactory>();
+
+            services.Scan(b => b.FromAssemblies(typeof(ITravelerItemsPolicy).Assembly)
+                .AddClasses(c => c.AssignableTo<ITravelerItemsPolicy>())
+                .AsImplementedInterfaces()
+                .WithSingletonLifetime());
+
+            return services;
+        }
     }
 }
